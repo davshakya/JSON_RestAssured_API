@@ -15,9 +15,36 @@ public class ArrayListLoop {
 		//################for-each loop################
 		for(String str:list1){
 			System.out.println(str+" "+str.length());
-		}
-	
+		}	
+		
+		//################Traverse using Iterator:: Forword traversing ################
+		
+		Iterator<String> itr = list1.iterator();
+		System.out.println(itr.next());
+		System.out.println(itr.next());
+		
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
 			
+		}
+		
+		//################Traverse using Iterator:: Backword traversing ################
+		ListIterator<String> stIterator= list1.listIterator(list1.size());
+		while(stIterator.hasPrevious())
+		{
+			String preValue = stIterator.previous();
+		 	System.out.println(preValue);
+		}
+		
+		//################Traverse using lambda ################
+		TreeSet<String> set1=new TreeSet<String>();
+		set1.addAll(list1);
+		set1.forEach(e->{
+			System.out.println(e);
+		});
+		
+		
+		
 	}	
-
 }
