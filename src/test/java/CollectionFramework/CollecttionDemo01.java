@@ -39,10 +39,7 @@ public class CollecttionDemo01 {
 		list1.set(0,"Chotu");
 		System.out.println(list1);
 		System.out.println(list1.subList(2, 5));
-			
-
 		
-
 	}
   
 }
