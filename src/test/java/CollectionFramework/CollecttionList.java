@@ -1,13 +1,13 @@
 package CollectionFramework;
 import java.util.*;
 
-public class CollecttionDemo01 {
+public class CollecttionList {
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//Typed safe collection
+		//################Typed safe collection################
 		ArrayList<String> str1= new ArrayList<String>();
 		str1.add("Dev");
 		str1.add("Shakya");
@@ -16,15 +16,17 @@ public class CollecttionDemo01 {
 		System.out.println(str1.get(0));
 		System.out.println(str1);
 		
-//		//Untyped safe collection
+		//#################Untyped safe collection###########
 		LinkedList list1= new LinkedList();
 		list1.add("Manan");
 		list1.add(123);
 		list1.add(1.14);
 		list1.add(true);
+		list1.add(1,"Min2");
+//		System.out.println(list1);
 		list1.addFirst("Manav");
 		list1.addLast("Ranjana");
-		System.out.println(list1);
+//		System.out.println(list1);
 //		System.out.println(list1.indexOf("Manan"));
 //		int l = list1.indexOf("Manav");
 //		System.out.println(l);
@@ -35,10 +37,16 @@ public class CollecttionDemo01 {
 //		System.out.println(list1.size());
 //		System.out.println(list1.isEmpty());
 //		System.out.println(list1.contains("Manav"));
+//		list1.set(0,"Chotu");
+//		System.out.println(list1);
+//		System.out.println(list1.subList(2, 5));
+
+		Vector<String> vector1=new Vector<String>();
+		vector1.addAll(list1);
+		System.out.println(vector1);
+	
 		
-		list1.set(0,"Chotu");
-		System.out.println(list1);
-		System.out.println(list1.subList(2, 5));
+		
 		
 	}
   
